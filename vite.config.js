@@ -5,20 +5,21 @@ const fs = require('fs')
 
 const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
+const pathSrc = path.resolve(__dirname, './src')
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [reactRefresh()],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `$injectedColor: orange;`
-      }
-    }
-  },
   resolve: {
     alias: {
       src: resolveApp('src')
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "${pathSrc}/scss/variables";`
+      }
     }
   }
 })

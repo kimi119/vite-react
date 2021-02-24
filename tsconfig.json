@@ -14,16 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    // "baseUrl": "./packages",
-    "paths": {
-      "src/*": ["src/*"],
-      // "main/*": ["@main/src/*"],
-      // "shop/*": ["shop/src/*"],
-      // "datacenter/*": ["datacenter/src/*"],
-      // "account/*": ["account/src/*"],
-      // "dashboard/*": ["dashboard/src/*"]
-    }
+    "jsx": "react-jsx"
   },
-  "include": ["packages"]
+  "include": ["src"]
 }
