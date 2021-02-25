@@ -60,7 +60,7 @@ class SideMenu extends React.Component<SideMenuProps, SideMenuState> {
 
   getSelectedKey(): string {
     if (history.location.pathname === '/') {
-      return route.MAIN
+      return route.DASHBOARD
     }
     return getPathname(history.location.pathname, 3)
   }
