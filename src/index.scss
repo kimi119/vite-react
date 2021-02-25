@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.widthFix {
+  // margin-bottom: 16px;
+  width: 1120px;
+  .input-group {
+    .ant-select-selector {
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .ant-select-selection-item {
+      text-align: right !important;
+      padding-right: 14px !important;
+    }
+  }
+}
+
+.cropper-container {
+  margin: 0 auto;
+}
+
+#root.noLogin {
+  transition: filter 0.4s 0.4s;
+  filter: blur(5px);
+}
+
+.col3-btn-margin {
+  margin-left: 109px;
+}
+
+.btn-margin {
+  margin-left: 16px !important;
+}
+
+body > iframe:last-child {
+  /* 临时解决主应用热更新白屏问题 */
+  display: none;
+}
+
+.ant-steps-item-subtitle {
+  margin-left: 4vw !important;
+}
+
+.ant-picker-footer {
+  display: none;
+}
+
+.ant-table-title {
+  padding: 16px 0 !important;
+}

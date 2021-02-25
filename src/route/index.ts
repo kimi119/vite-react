@@ -2,7 +2,7 @@ const route: { [key: string]: string } = {
   INDEX: '/',
   LOGIN: '/login',
 
-  DASHBOARD: '/dashboard'
+  MAIN: '/main'
 }
 
 export default route
